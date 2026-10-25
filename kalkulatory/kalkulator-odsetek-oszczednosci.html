@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalkulator odsetek od oszczędności: zysk po podatku</title>
+<meta name="description" content="Oblicz odsetki od oszczędności brutto i netto po podatku 19%. Wpisz oprocentowanie z oferty banku, wybierz kapitalizację i sprawdź, jak zmienia się wynik.">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Kalkulator odsetek od oszczędności: zysk po podatku",
+  "inLanguage": "pl",
+  "datePublished": "2026-10-25",
+  "dateModified": "2026-10-25",
+  "author": { "@type": "Person", "name": "Maciej Baniewicz" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Czy odsetki od lokaty są opodatkowane?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Tak. Odsetki z lokat i rachunków oszczędnościowych podlegają podatkowi 19% na podstawie art. 30a ust. 1 pkt 3 ustawy o PIT. Bank pobiera go jako płatnik." }
+    },
+    {
+      "@type": "Question",
+      "name": "Co daje kapitalizacja odsetek?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Dopisane odsetki same zaczynają przynosić odsetki. Im częściej odsetki są dopisywane, tym wyższy wynik brutto, choć przy rocznym okresie różnica jest zwykle niewielka." }
+    },
+    {
+      "@type": "Question",
+      "name": "Czy kalkulator zna aktualną stopę NBP?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Nie. Kalkulator nie zawiera aktualnej stopy referencyjnej. Wpisz oprocentowanie z oferty banku, bo ono decyduje o wyniku." }
+    },
+    {
+      "@type": "Question",
+      "name": "Czy wynik to rzeczywisty zysk?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Nie, jest orientacyjny. Pokazuje odsetki bez uwzględnienia inflacji, przy stałym oprocentowaniu i bez opłat za rachunek." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="../index.html">Finanse po polsku</a>
+    <nav>
+      <div class="dd">
+        <a href="../index.html#kredyty">Kredyty i pożyczki</a>
+        <ul>
+          <li><a href="../poradniki/koszt-kredytu-gotowkowego.html">Koszt kredytu gotówkowego</a></li>
+          <li><a href="../poradniki/rrso-wyjasnione-krok-po-kroku.html">RRSO krok po kroku</a></li>
+          <li><a href="../poradniki/wczesniejsza-splata-kredytu-konsumenckiego.html">Wcześniejsza spłata kredytu</a></li>
+          <li><a href="../poradniki/calkowita-kwota-do-splaty-jak-czytac-umowe.html">Całkowita kwota do spłaty</a></li>
+          <li><a href="../poradniki/kiedy-kredyt-konsumencki-zly-pomysl.html">Kiedy kredyt jest złym pomysłem</a></li>
+          <li><a href="../porownania/pozyczka-vs-kredyt-konsumencki.html">Pożyczka czy kredyt konsumencki</a></li>
+          <li><a href="../kalkulatory/kalkulator-kosztu-kredytu.html">Kalkulator kosztu kredytu</a></li>
+        </ul>
+      </div>
+      <div class="dd">
+        <a href="../index.html#oszczednosci">Oszczędzanie i konta</a>
+        <ul>
+          <li><a href="../porownania/konto-oszczednosciowe-vs-lokata.html">Konto oszczędnościowe vs lokata</a></li>
+          <li><a href="../poradniki/konto-bez-oplat-regulamin.html">Konto bez opłat</a></li>
+          <li><a href="../poradniki/inflacja-a-oszczednosci.html">Inflacja a oszczędności</a></li>
+          <li><a href="../poradniki/poduszka-finansowa-ile-odlozyc.html">Poduszka finansowa</a></li>
+          <li><a href="../poradniki/gwarancja-bfg-co-chroni.html">Gwarancja BFG: co chroni</a></li>
+          <li><a href="../kalkulatory/kalkulator-odsetek-oszczednosci.html">Kalkulator odsetek</a></li>
+        </ul>
+      </div>
+      <div class="dd">
+        <a href="../index.html#inwestycje">Inwestycje i emerytura</a>
+        <ul>
+          <li><a href="../poradniki/obligacje-oszczednosciowe-detaliczne.html">Obligacje oszczędnościowe</a></li>
+          <li><a href="../porownania/ike-ikze-porownanie.html">IKE czy IKZE</a></li>
+        </ul>
+      </div>
+      <div class="dd">
+        <a href="../index.html#podatki">Podatki i zwroty</a>
+        <ul>
+          <li><a href="../poradniki/pit-37-krok-po-kroku.html">PIT-37 krok po kroku</a></li>
+          <li><a href="../poradniki/zwrot-podatku-za-zeszly-rok.html">Zwrot podatku za zeszły rok</a></li>
+          <li><a href="../poradniki/ulga-na-dzieci.html">Ulga na dzieci</a></li>
+          <li><a href="../poradniki/ulga-termomodernizacyjna.html">Ulga termomodernizacyjna</a></li>
+          <li><a href="../kalkulatory/kalkulator-podatku-skala-liniowy-2026.html">Podatek: skala czy liniowy 2026</a></li>
+        </ul>
+      </div>
+      <div class="dd">
+        <a href="../index.html#firma">ZUS i działalność</a>
+        <ul>
+          <li><a href="../poradniki/skladki-zus-przedsiebiorcow-2026.html">Składki ZUS przedsiębiorców 2026</a></li>
+          <li><a href="../porownania/dzialalnosc-vs-umowa-zlecenie-vs-b2b.html">Działalność czy umowa zlecenie</a></li>
+          <li><a href="../porownania/ryczalt-ewidencjonowany-kiedy-oplaca-sie.html">Ryczałt ewidencjonowany</a></li>
+        </ul>
+      </div>
+      <div class="dd">
+        <a href="../index.html#budzet">Budżet i rachunki</a>
+        <ul>
+          <li><a href="../poradniki/metoda-50-30-20-polskie-zarobki.html">Metoda 50/30/20</a></li>
+          <li><a href="../poradniki/rachunki-prad-gaz-jak-obnizyc.html">Rachunki za prąd i gaz</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <article class="wrap">
+    <span class="meta">Kalkulator · Autor: Maciej Baniewicz · Ostatnia aktualizacja: 25.10.2026</span>
+    <h1>Kalkulator odsetek od oszczędności: zysk po podatku</h1>
+    <p class="lead">Odsetki od oszczędności liczysz tak: kapitał razy roczne oprocentowanie razy czas w latach. Przy kapitalizacji dopisane odsetki same zaczynają przynosić odsetki. Od wyniku odejmujesz 19% podatku od odsetek z lokat i rachunków. Wpisz oprocentowanie z oferty banku, a kalkulator pokaże wynik brutto i netto.</p>
+
+    <form id="calc-form" class="calc" novalidate>
+      <div class="row">
+        <div>
+          <label for="kwota">Kwota oszczędności (zł)</label>
+          <input id="kwota" type="number" min="1" step="100" value="10000" required>
+        </div>
+        <div>
+          <label for="okres">Okres (miesiące)</label>
+          <input id="okres" type="number" min="1" step="1" value="12" required>
+        </div>
+        <div>
+          <label for="oprocentowanie">Oprocentowanie roczne z oferty (%)</label>
+          <input id="oprocentowanie" type="number" min="0" step="0.01" placeholder="wpisz z oferty banku" required>
+        </div>
+        <div>
+          <label for="kapitalizacja">Kapitalizacja odsetek</label>
+          <select id="kapitalizacja">
+            <option value="0">Brak (odsetki proste)</option>
+            <option value="1">Raz w roku</option>
+            <option value="2">Co pół roku</option>
+            <option value="4">Co kwartał</option>
+            <option value="12">Co miesiąc</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit">Oblicz</button>
+      <div id="wynik"></div>
+    </form>
+
+    <h2>Jak kalkulator liczy odsetki</h2>
+    <p>Kalkulator stosuje dwa wzory z matematyki finansowej, a nie przepisy. Zasady naliczania ustalają regulaminy banków.</p>
+    <h3>Odsetki proste</h3>
+    <div class="box">
+      <code>I = K × r × t</code><br>
+      gdzie <b>K</b> to kapitał, <b>r</b> to oprocentowanie roczne w ułamku dziesiętnym, a <b>t</b> to czas w latach (miesiące podzielone przez 12).
+    </div>
+    <p>Dla 10 000 zł przez 12 miesięcy przy oprocentowaniu 4% odsetki wynoszą 10 000 × 0,04 × 1 = 400 zł.</p>
+    <h3>Odsetki składane</h3>
+    <div class="box">
+      <code>K<sub>n</sub> = K × (1 + r/m)<sup>f</sup> × (1 + r × k/12)</code><br>
+      gdzie <b>m</b> to liczba kapitalizacji w roku, <b>f</b> to liczba pełnych okresów kapitalizacji, a <b>k</b> to miesiące reszty, która liczy się prosto.
+    </div>
+    <p>Dla 10 000 zł przez 12 miesięcy przy 4% i kapitalizacji miesięcznej mamy (1 + 0,04/12)<sup>12</sup>, czyli około 1,0407. Odsetki brutto wynoszą wtedy około 407,42 zł.</p>
+
+    <h2>Różne okresy kapitalizacji</h2>
+    <p>Kapitalizacja to częstotliwość dopisywania odsetek do kapitału. Kalkulator obsługuje cztery warianty; „brak” oznacza odsetki proste, płatne na koniec okresu.</p>
+    <p>Dla 10 000 zł przez 12 miesięcy przy 6% odsetki brutto wynoszą 600 zł przy odsetkach prostych, około 613,64 zł przy kapitalizacji kwartalnej i około 616,78 zł przy miesięcznej. Różnica rośnie wraz z oprocentowaniem i czasem trwania oszczędności. Dla 24 miesięcy przy 6% odsetki proste dają 1 200 zł, a miesięczna kapitalizacja około 1 271,60 zł.</p>
+    <p>Terminy dopisania odsetek ustalają regulaminy. Regulamin Citibanku przewiduje dopisanie odsetek od konta raz w miesiącu, a od lokaty w ostatnim dniu okresu umownego.</p>
+
+    <h2>Podatek od odsetek: 19%</h2>
+    <p>Odsetki od lokat i rachunków podlegają zryczałtowanemu podatkowi 19% (art. 30a ust. 1 pkt 3 ustawy o PIT). Płatnikiem jest bank, który pobiera go przy wypłacie albo przy postawieniu odsetek do dyspozycji podatnika (art. 41 ust. 4).</p>
+    <div class="box">
+      <code>odsetki netto = odsetki brutto − 19% × odsetki brutto</code>
+    </div>
+    <p>Kalkulator liczy podatek jednorazowo, od sumy odsetek brutto. Przy kapitalizacji moment poboru zależy od banku, więc wynik netto może się nieco różnić od rzeczywistego.</p>
+
+    <h2>Jak czytać wynik</h2>
+    <ul>
+      <li><b>Odsetki brutto</b> to zysk przed podatkiem.</li>
+      <li><b>Podatek 19%</b> to część odsetek, którą zabiera fiskus.</li>
+      <li><b>Odsetki netto</b> to kwota, która faktycznie zostaje na koncie.</li>
+      <li><b>Efektywne roczne oprocentowanie brutto</b> pozwala porównać różne kapitalizacje. Przy odsetkach prostych równa się oprocentowaniu.</li>
+    </ul>
+
+    <h2>Przykład porównawczy</h2>
+    <p>Ta sama kwota 10 000 zł przez 12 miesięcy przy oprocentowaniu 4% daje 400 zł odsetek prostych, czyli 324 zł netto. Przy kapitalizacji miesięcznej odsetki brutto wynoszą 407,42 zł, a netto 330,01 zł. Różnica to 6,01 zł.</p>
+
+    <h2>Ograniczenia kalkulatora</h2>
+    <ul>
+      <li>Nie uwzględnia inflacji, więc nie pokazuje realnej wartości oszczędności.</li>
+      <li>Liczy czas w miesiącach. Banki liczą odsetki za rzeczywistą liczbę dni (baza 365 lub 360), więc wynik może różnić się o drobne kwoty.</li>
+      <li>Zakłada stałe oprocentowanie przez cały okres.</li>
+      <li>Nie uwzględnia opłat za rachunek ani wcześniejszego zerwania lokaty.</li>
+    </ul>
+
+    <h2>Najczęstsze pytania</h2>
+    <h3>Czy odsetki od lokaty są opodatkowane?</h3>
+    <p>Tak. Odsetki z lokat i rachunków oszczędnościowych podlegają podatkowi 19% na podstawie art. 30a ust. 1 pkt 3 ustawy o PIT. Bank pobiera go jako płatnik.</p>
+    <h3>Co daje kapitalizacja odsetek?</h3>
+    <p>Dopisane odsetki same zaczynają przynosić odsetki. Im częściej odsetki są dopisywane, tym wyższy wynik brutto, choć przy rocznym okresie różnica jest zwykle niewielka.</p>
+    <h3>Czy kalkulator zna aktualną stopę NBP?</h3>
+    <p>Nie. Kalkulator nie zawiera aktualnej stopy referencyjnej. Wpisz oprocentowanie z oferty banku, bo ono decyduje o wyniku.</p>
+    <h3>Czy wynik to rzeczywisty zysk?</h3>
+    <p>Nie, jest orientacyjny. Pomija inflację, zmiany oprocentowania i opłaty.</p>
+
+    <h2>Powiązane treści</h2>
+    <ul>
+      <li><a href="../porownania/konto-oszczednosciowe-vs-lokata.html">Konto oszczędnościowe a lokata: porównanie</a></li>
+      <li><a href="../poradniki/gwarancja-bfg-co-chroni.html">Gwarancja BFG: co chroni oszczędności</a></li>
+      <li><a href="../poradniki/poduszka-finansowa-ile-odlozyc.html">Poduszka finansowa: ile odłożyć</a></li>
+    </ul>
+
+    <h2>Źródła</h2>
+    <ul>
+      <li>Ustawa o podatku dochodowym od osób fizycznych, jednolity tekst Dz.U. 2026 poz. 592: art. 30a ust. 1 pkt 2 i 3 oraz art. 41 ust. 4. Odczyt 25.10.2026. <a href="https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf" target="_blank" rel="noopener">Tekst PDF (Sejm)</a></li>
+      <li>Regulamin Citibank, „Terminy kapitalizacji odsetek”, § 33 ust. 3–5. Odczyt 25.10.2026. <a href="https://www.citibank.pl/files/documents/accounts/terminy-kapitalizacji-odsetek.pdf" target="_blank" rel="noopener">Dokument banku</a></li>
+      <li>Regulamin ING Bank Śląski, lokaty negocjowane, pkt I.2 (baza obliczania odsetek). Odczyt 25.10.2026. <a href="https://www.ing.pl/_fileserver/item/1000530" target="_blank" rel="noopener">Dokument banku</a></li>
+      <li>Wzory odsetek prostych i składanych to standardowa matematyka finansowa, a nie przepis.</li>
+    </ul>
+    <p class="meta">Dane sprawdzone: 25.10.2026.</p>
+
+    <div class="warn">
+      <b>Zastrzeżenie:</b> wynik jest orientacyjny. Nie stanowi oferty, porady finansowej, prawnej ani podatkowej. Dla decyzji sprawdź warunki w regulaminie banku.
+    </div>
+  </article>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <a href="../index.html">Strona główna</a> · Treści edukacyjne, nie stanowią porady finansowej ani prawnej.
+  </div>
+</footer>
+
+<script src="../assets/kalkulator-kalkulator-odsetek-oszczednosci.js" defer></script>
+</body>
+</html>

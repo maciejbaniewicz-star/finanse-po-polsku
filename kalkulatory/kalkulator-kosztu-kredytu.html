@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalkulator kosztu kredytu: rata i koszt odsetek w złotych</title>
+<meta name="description" content="Oblicz ratę i koszt kredytu gotówkowego: wpisz kwotę, okres, oprocentowanie i prowizję. Metoda rat annuitetowych, wyjaśnienie wyniku i różnica względem RRSO.">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Kalkulator kosztu kredytu: rata i koszt odsetek",
+  "inLanguage": "pl",
+  "datePublished": "2026-10-23",
+  "dateModified": "2026-10-23",
+  "author": { "@type": "Person", "name": "Maciej Baniewicz" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Czy kalkulator pokazuje RRSO?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Nie. Kalkulator pokazuje ratę oraz koszt z odsetek i prowizji. RRSO wymaga uwzględnienia wszystkich kosztów wymienionych w umowie zgodnie z załącznikiem nr 4 do ustawy o kredycie konsumenckim." }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak kalkulator liczy ratę?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Stosuje wzór na ratę annuitetową: kapitał razy miesięczne oprocentowanie, podzielone przez jeden minus (jeden plus miesięczne oprocentowanie) podniesione do potęgi minus liczba rat." }
+    },
+    {
+      "@type": "Question",
+      "name": "Dlaczego koszt kredytu różni się od sumy rat minus kwota?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Koszt kredytu w kalkulatorze to suma rat pomniejszona o kwotę kredytu, do której dodawana jest prowizja. Prowizja jest pobierana osobno, dlatego sumuje się z odsetkami." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="../index.html">Finanse po polsku</a>
+    <nav>
+      <div class="dd">
+        <a href="../index.html#kredyty">Kredyty i pożyczki</a>
+        <ul>
+          <li><a href="../poradniki/koszt-kredytu-gotowkowego.html">Koszt kredytu gotówkowego</a></li>
+          <li><a href="../poradniki/rrso-wyjasnione-krok-po-kroku.html">RRSO krok po kroku</a></li>
+          <li><a href="../poradniki/wczesniejsza-splata-kredytu-konsumenckiego.html">Wcześniejsza spłata kredytu</a></li>
+          <li><a href="../poradniki/calkowita-kwota-do-splaty-jak-czytac-umowe.html">Całkowita kwota do spłaty</a></li>
+          <li><a href="../poradniki/kiedy-kredyt-konsumencki-zly-pomysl.html">Kiedy kredyt jest złym pomysłem</a></li>
+          <li><a href="../porownania/pozyczka-vs-kredyt-konsumencki.html">Pożyczka czy kredyt konsumencki</a></li>
+          <li><a href="../kalkulatory/kalkulator-kosztu-kredytu.html">Kalkulator kosztu kredytu</a></li>
+        </ul>
+      </div>
+      <div class="dd">
+        <a href="../index.html#oszczednosci">Oszczędzanie i konta</a>
+        <ul>
+          <li><a href="../porownania/konto-oszczednosciowe-vs-lokata.html">Konto oszczędnościowe vs lokata</a></li>
+          <li><a href="../poradniki/konto-bez-oplat-regulamin.html">Konto bez opłat</a></li>
+          <li><a href="../poradniki/inflacja-a-oszczednosci.html">Inflacja a oszczędności</a></li>
+          <li><a href="../poradniki/poduszka-finansowa-ile-odlozyc.html">Poduszka finansowa</a></li>
+          <li><a href="../poradniki/gwarancja-bfg-co-chroni.html">Gwarancja BFG: co chroni</a></li>
+          <li><a href="../kalkulatory/kalkulator-odsetek-oszczednosci.html">Kalkulator odsetek</a></li>
+        </ul>
+      </div>
+      <div class="dd">
+        <a href="../index.html#inwestycje">Inwestycje i emerytura</a>
+        <ul>
+          <li><a href="../poradniki/obligacje-oszczednosciowe-detaliczne.html">Obligacje oszczędnościowe</a></li>
+          <li><a href="../porownania/ike-ikze-porownanie.html">IKE czy IKZE</a></li>
+        </ul>
+      </div>
+      <div class="dd">
+        <a href="../index.html#podatki">Podatki i zwroty</a>
+        <ul>
+          <li><a href="../poradniki/pit-37-krok-po-kroku.html">PIT-37 krok po kroku</a></li>
+          <li><a href="../poradniki/zwrot-podatku-za-zeszly-rok.html">Zwrot podatku za zeszły rok</a></li>
+          <li><a href="../poradniki/ulga-na-dzieci.html">Ulga na dzieci</a></li>
+          <li><a href="../poradniki/ulga-termomodernizacyjna.html">Ulga termomodernizacyjna</a></li>
+          <li><a href="../kalkulatory/kalkulator-podatku-skala-liniowy-2026.html">Podatek: skala czy liniowy 2026</a></li>
+        </ul>
+      </div>
+      <div class="dd">
+        <a href="../index.html#firma">ZUS i działalność</a>
+        <ul>
+          <li><a href="../poradniki/skladki-zus-przedsiebiorcow-2026.html">Składki ZUS przedsiębiorców 2026</a></li>
+          <li><a href="../porownania/dzialalnosc-vs-umowa-zlecenie-vs-b2b.html">Działalność czy umowa zlecenie</a></li>
+          <li><a href="../porownania/ryczalt-ewidencjonowany-kiedy-oplaca-sie.html">Ryczałt ewidencjonowany</a></li>
+        </ul>
+      </div>
+      <div class="dd">
+        <a href="../index.html#budzet">Budżet i rachunki</a>
+        <ul>
+          <li><a href="../poradniki/metoda-50-30-20-polskie-zarobki.html">Metoda 50/30/20</a></li>
+          <li><a href="../poradniki/rachunki-prad-gaz-jak-obnizyc.html">Rachunki za prąd i gaz</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <article class="wrap">
+    <span class="meta">Kalkulator · Autor: Maciej Baniewicz · Ostatnia aktualizacja: 23.10.2026</span>
+    <h1>Kalkulator kosztu kredytu: rata i koszt odsetek</h1>
+    <p class="lead">Wpisz kwotę, okres, oprocentowanie i prowizję, a kalkulator pokaże orientacyjną ratę annuitetową oraz koszt kredytu. Wynik pomaga zrozumieć, ile zapłacisz ponad pożyczoną kwotę. Nie zastępuje RRSO z umowy.</p>
+
+    <form id="calc-form" class="calc" novalidate>
+      <div class="row">
+        <div>
+          <label for="kwota">Kwota kredytu (zł)</label>
+          <input id="kwota" type="number" min="1" step="100" value="20000" required>
+        </div>
+        <div>
+          <label for="okres">Okres (miesiące)</label>
+          <input id="okres" type="number" min="1" step="1" value="36" required>
+        </div>
+        <div>
+          <label for="oprocentowanie">Oprocentowanie roczne nominalne (%)</label>
+          <input id="oprocentowanie" type="number" min="0" step="0.1" value="12" required>
+        </div>
+        <div>
+          <label for="prowizja">Prowizja (% kwoty)</label>
+          <input id="prowizja" type="number" min="0" step="0.1" value="0">
+        </div>
+      </div>
+      <button type="submit">Oblicz</button>
+      <div id="wynik"></div>
+    </form>
+
+    <h2>Jak kalkulator liczy wynik</h2>
+    <p>Kalkulator zakłada <b>ratę annuitetową</b>, czyli stałą kwotę płaconą co miesiąc przez cały okres. Na początku większa część raty to odsetki, a z czasem rośnie udział spłaty kapitału. Rata jest liczona wzorem:</p>
+    <div class="box">
+      <code>rata = K × r / (1 − (1 + r)<sup>−n</sup>)</code><br>
+      gdzie <b>K</b> to kwota kredytu, <b>r</b> to miesięczne oprocentowanie (roczne podzielone przez 12), a <b>n</b> to liczba rat.
+    </div>
+    <p>Dla domyślnych wartości (20 000 zł, 36 miesięcy, 12% rocznie) rata wynosi około 664,29 zł. Suma wszystkich rat to około 23 914 zł, a koszt odsetek około 3 914 zł.</p>
+    <p>Koszt kredytu w wyniku to odsetki plus prowizja. Prowizja liczona jest jako procent kwoty kredytu i dolicza się ją do kosztu osobno. Jeśli ustawisz prowizję 5%, koszt wzrośnie o 1 000 zł, ale rata się nie zmieni, bo kalkulator przyjmuje, że opłata nie zmniejsza ani nie zwiększa miesięcznej raty.</p>
+
+    <h2>Jak czytać wynik</h2>
+    <ul>
+      <li><b>Miesięczna rata</b> to kwota, którą płacisz co miesiąc przez cały okres. Ma wpływ na budżet, ale nie na łączny koszt.</li>
+      <li><b>Suma rat</b> to wszystkie raty razem. Porównuj ją z kwotą kredytu, aby zobaczyć, ile dokładasz.</li>
+      <li><b>Prowizja</b> to jednorazowa opłata. Jej wpływ jest największy przy krótkich okresach, bo rozkłada się na mniej miesięcy.</li>
+      <li><b>Koszt kredytu</b> to odsetki i prowizja razem. To najważniejsza liczba przy porównywaniu tej samej kwoty na ten sam okres.</li>
+    </ul>
+
+    <h2>Czym jest RRSO i dlaczego kalkulator go nie pokazuje</h2>
+    <p><b>RRSO</b> (rzeczywista roczna stopa oprocentowania) to całkowity koszt kredytu wyrażony jako roczny procent kwoty kredytu. Ustawa o kredycie konsumenckim definiuje ją jako całkowity koszt ponoszony przez konsumenta (art. 5 pkt 12). Przy jej ustalaniu uwzględnia się także koszty prowadzenia rachunku, z którego realizowane są spłaty, chyba że rachunek nie jest obowiązkowy i jego koszty zostały jasno podane (art. 25 ust. 1). Sposób liczenia określa załącznik nr 4.</p>
+    <p>RRSO jest więc szerszym wskaźnikiem niż koszt pokazany tutaj. Dla przykładu 20 000 zł na 36 miesięcy przy 12% nominalnie i bez prowizji RRSO wynosi około 12,68%, a z prowizją 5% około 16,77%. Obie wartości są policzone przy założeniu równych miesięcy zgodnie z załącznikiem nr 4. Rzeczywisty harmonogram lub dodatkowe koszty z umowy mogą dać inny wynik.</p>
+
+    <h2>Jak ustawić dane, żeby wynik był wiarygodny</h2>
+    <ul>
+      <li><b>Kwota.</b> Wpisz kwotę, którą faktycznie chcesz pożyczyć, a nie kwotę po prowizji.</li>
+      <li><b>Okres.</b> Podaj liczbę miesięcy z umowy. Dłuższy okres obniża ratę, ale zwiększa koszt odsetek.</li>
+      <li><b>Oprocentowanie.</b> Wpisz stopę nominalną z oferty. Pamiętaj, że RRSO będzie wyższe.</li>
+      <li><b>Prowizja.</b> Podaj procent kwoty, jeśli oferta ją przewiduje. Jeśli nie wiesz, wpisz 0 i sprawdź ofertę.</li>
+    </ul>
+    <p>Porównując oferty, ustaw identyczną kwotę i okres we wszystkich. Wtedy różnice w ratach i kosztach wynikają z warunków, a nie z innych parametrów.</p>
+
+    <h2>Przykłady do porównania</h2>
+    <p>Zmiana okresu z 36 na 48 miesięcy przy tych samych 20 000 zł i 12% obniża ratę, ale zwiększa koszt odsetek. Sprawdź to samodzielnie w formularzu powyżej. Takie zestawienie najlepiej pokazuje, że niższa rata nie oznacza taniego kredytu.</p>
+    <p>Podobnie prowizja: ten sam kredyt z prowizją 0% i 5% różni się kosztem o 1 000 zł przy tej samej racie. To dlatego oferty z „0% prowizji" mogą być atrakcyjne, choć ich oprocentowanie bywa wyższe.</p>
+
+    <h2>Ograniczenia kalkulatora</h2>
+    <ul>
+      <li>Nie liczy RRSO i nie uwzględnia ubezpieczeń ani innych opłat z umowy.</li>
+      <li>Zakłada stałe oprocentowanie przez cały okres.</li>
+      <li>Nie uwzględnia wcześniejszej spłaty ani zmian harmonogramu.</li>
+      <li>Nie uwzględnia podatków ani innych kosztów pośrednich.</li>
+    </ul>
+    <p>Dla decyzji kredytowej potrzebujesz RRSO, całkowitej kwoty do zapłaty z umowy i informacji przedumownych. Kalkulator to narzędzie do szybkiego sprawdzenia rzędów wielkości.</p>
+
+    <h2>Najczęstsze pytania</h2>
+    <h3>Czy kalkulator pokazuje RRSO?</h3>
+    <p>Nie. Kalkulator pokazuje ratę oraz koszt z odsetek i prowizji. RRSO wymaga uwzględnienia wszystkich kosztów wymienionych w umowie zgodnie z załącznikiem nr 4 do ustawy.</p>
+    <h3>Jak kalkulator liczy ratę?</h3>
+    <p>Stosuje wzór na ratę annuitetową: kapitał razy miesięczne oprocentowanie, podzielone przez jeden minus (jeden plus miesięczne oprocentowanie) podniesione do potęgi minus liczba rat.</p>
+    <h3>Dlaczego koszt kredytu nie jest równy sumie rat minus kwota?</h3>
+    <p>W kalkulatorze koszt to suma rat pomniejszona o kwotę kredytu, do której dodawana jest prowizja. Prowizja jest pobierana osobno, dlatego sumuje się z odsetkami.</p>
+
+    <h2>O autorze</h2>
+    <p>Maciej Baniewicz zawodowo pracuje jako stolarz jachtowy. Finanse osobiste są jego pasją. Nie jest doradcą finansowym, prawnikiem ani doradcą podatkowym i nie ma formalnych kwalifikacji finansowych. Dlatego każdą liczbę i przepis sprawdza w źródle pierwotnym: ustawie, komunikacie KNF, UOKiK, BFG, NBP lub Ministerstwa Finansów. Przed decyzją finansową warto skonsultować się z licencjonowanym doradcą.</p>
+
+    <h2>Źródła</h2>
+    <ul>
+      <li>Ustawa o kredycie konsumenckim, tekst jednolity Dz.U. 2025 poz. 1362: art. 5 pkt 6 i 12, art. 25 ust. 1 i 3, załącznik nr 4 (sposób obliczania RRSO). Sprawdzono w tekście opublikowanym przez Sejm. <a href="https://eli.gov.pl/eli/DU/2025/1362/ogl" target="_blank" rel="noopener">eli.gov.pl – Dz.U. 2025 poz. 1362</a></li>
+      <li>Wzór na ratę annuitetową jest standardowym wzorem matematyki finansowej. Wartości w przykładach zostały policzone i sprawdzone obliczeniowo.</li>
+    </ul>
+
+    <div class="box">
+      Przykład do sprawdzenia: 20 000 zł, 36 miesięcy, 12% i prowizja 0% daje ratę ok. 664 zł i koszt odsetek ok. 3 914 zł. Szczegóły w <a href="../poradniki/koszt-kredytu-gotowkowego.html">poradniku o kosztach kredytu</a>.
+    </div>
+
+    <div class="warn">
+      <b>Zastrzeżenie:</b> wynik jest orientacyjny. Nie stanowi oferty, porady finansowej ani RRSO. Dla decyzji sprawdź warunki umowy u kredytodawcy.
+    </div>
+  </article>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <a href="../index.html">Strona główna</a> · Treści edukacyjne, nie stanowią porady finansowej ani prawnej.
+  </div>
+</footer>
+
+<script src="../assets/kalkulator.js"></script>
+</body>
+</html>
